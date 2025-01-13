@@ -1,0 +1,112 @@
+.container{
+    padding: 0.3em;
+    background: rgb(246, 243, 243);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding-bottom: 4.5rem;
+}
+
+
+.backDropContainer{
+    width: 100%;
+    height: 25vh;
+    background: url(https://images.pexels.com/photos/15030423/pexels-photo-15030423/free-photo-of-snow-covered-trees-against-a-blue-sky.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    
+    background-repeat: none;
+    position: relative;
+    border-radius: 20px;
+}
+
+.backDropContainer img{
+    width: 7em;
+    height: 7em;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -38%;
+    left: 6%;
+}
+  
+.profileContainer__details{
+    padding-top: 4.5rem;
+}
+
+.recentActivity  img{
+    min-width: 5rem;
+}
+.connectedButton{
+    padding: 0.25rem;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background: rgba(3, 93, 190, 0.745);
+    cursor: pointer;
+    margin-block: .51rem;
+    border: 1px solid rgb(140, 130, 130);
+}
+.connectedButton:hover{
+    scale: 1.031;
+}
+.connectBtn{
+    padding: 0.25rem;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background: rgb(63, 63, 178);
+    cursor: pointer;
+    margin-block: 0.5rem;
+}
+.connectBtn:hover{
+    scale: 1.031;
+}
+
+.postCard{
+    margin-top: 0.5rem;
+    padding-inline: 0.35rem;
+}
+
+.card{
+    display: flex;
+}
+
+.card__profileContainer>img{
+    width: 80%;
+    border: 1px solid rgb(204, 164, 164);
+    border-radius: 10px;
+}
+
+.workHistoryContainer{
+    display: flex;
+    gap: 1.4rem;
+    padding-top: 1.4rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.workHistoryCard{
+    min-width: fit-content;
+    padding-inline: 2.5rem;
+    padding-block: 1rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(173, 173, 173);
+}
+
+.profileContainer__flex{
+    display: flex;
+    gap: 0.7rem; 
+}
+
+
+@media screen and (max-width:600px) {
+    .profileContainer__flex{
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+    .recentActivity{
+        width: 40%;
+    }
+    
+}

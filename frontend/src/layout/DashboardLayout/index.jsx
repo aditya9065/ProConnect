@@ -25,7 +25,7 @@ function DashboardLayout({ children }) {
       <div  className={styles.homeContainer}>
         <div style={{borderRight:"1px solid rgb(222,222,222)", paddingRight:"0.5rem"}} className={styles.homeContainer__leftBar}>
           <div onClick={()=>{
-            router.push("/dashboard")
+            router.push("/Dashboard")
           }} className={styles.sideBarOption}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +100,7 @@ function DashboardLayout({ children }) {
 
       <div className={styles.mobileNavBar}>
         <div onClick={()=>{
-            router.push("/dashboard")
+            router.push("/Dashboard")
           }} className={styles.sigleNavItemHolder_mobileView}>
         <svg
               xmlns="http://www.w3.org/2000/svg"

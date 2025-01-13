@@ -16,7 +16,7 @@ import styles from "./index.module.css";
 import { BASE_URL } from "@/config/redux";
 import { resetPostId } from "@/config/redux/reducer/postReducer";
 
-function dashboard() {
+function Dashboard() {
   const dispatch = useDispatch();
 
   const router = useRouter();
@@ -38,7 +38,7 @@ function dashboard() {
     if (!authState.all_profiles_fetched) {
       dispatch(getAllUsers());
     }
-  }, [authState.isTokenThere]);
+  }, [authState.isTokenThere, dispatch]);
 
   const handleUpload = async () => {
     await dispatch(createPost({ file: fileContent, body: postContent }));
@@ -320,4 +320,4 @@ function dashboard() {
   }
 }
 
-export default dashboard;
+export default Dashboard;

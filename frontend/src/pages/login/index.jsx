@@ -19,7 +19,7 @@ function LoginComponent() {
 
   useEffect(() => {
     if (authState.loggedIn) {
-      router.push("/dashboard");
+      router.push("/Dashboard");
 
     }
   },[authState.loggedIn]);
@@ -30,7 +30,7 @@ function LoginComponent() {
 
   useEffect(()=>{
     if(localStorage.getItem("token")){
-      router.push("/dashboard")
+      router.push("/Dashboard")
 
     }
   },[])
